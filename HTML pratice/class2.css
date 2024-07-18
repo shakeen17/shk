@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background-image: url("images/backgroundforform.jpg");
+    background-position: cover;
+    background-repeat: no-repeat;
+}
+
+.map{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+iframe{
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+audio{
+    padding: 50px;
+    align-items: center;
+}
+
+.lst{
+    background-color: antiquewhite;
+    padding: 30px;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding: 20px;
+}
+a:hover{
+    background-color: rgb(234, 141, 18);
+    height: 100%;
+}
+
+a:first-child{
+    margin-right: auto;
+}

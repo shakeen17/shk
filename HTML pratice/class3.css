@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url(images/backgroundforform.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.datetime{
+    
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 10px;
+    border: 3px solid #2E94E3;
+    background-color: rgba(232, 81, 16, 0.456);
+}
+.date{
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+.time{
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.time span:not(:last-child){
+    position:relative;
+    margin:0 6px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.time span:last-child{
+    
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 30px;
+    padding: 0 5px;
+    border-radius: 3px;
+}
+
+nav{
+    background-color: rgba(232, 81, 16, 0.456);
+    box-shadow: 3px 3px 5px(0, 0, 0, 0.5);
+    width:100%;
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav li{
+    height: 50px;
+}
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+nav a:hover{
+    background-color: rgb(246, 162, 59);
+}
+
+nav li:first-child{
+    margin-right: auto;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.14);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+
+.sidebar li{
+    width: 100%;
+}
+.sidebar a{
+    width: 100%;
+}
+
+.hideOnMenu{
+    display: none;
+}
+
+@media(max-width:800px){
+    .hideOnMobile{
+        display: none;
+    }
+    .hideOnMenu{
+        display: block;
+    }
+}
+@media(max-width : 400px){
+    .sidebar{
+        width: 100%;
+    }
+}
+
+
+
